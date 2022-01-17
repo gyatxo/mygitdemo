@@ -36,3 +36,35 @@ if(1=='true'){
 else{
     console.log("false");
 }
+
+
+// OBJects
+
+var student = {
+    Name: "urgen",
+    college: "kcc",
+    age: 25,
+    greeting: function(){
+        
+        return "hi my name is " + this.Name + " and i am " + this.age + " years old. my college name is " + this.college;
+    }
+    
+};
+
+var hi = student.greeting();
+console.log(student.greeting());
+console.log(hi);
+
+var student1 = new Object();
+student1.Name = 'manoj';
+student1.age = 35;
+student1.greet = 'texas';
+console.log(student1.greet);
+
+function student2(name, age){
+    this.name= name;
+    this.age= age;
+}
+
+var s1= new student2('gyatso',25);
+console.log(s1.name);
